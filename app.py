@@ -19,51 +19,51 @@ st.set_page_config(
 # Family tree data as a dictionary, now with local image paths (place images in ./)
 family_tree = {
     "name": "Raju & Heroji",
-    "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/raju.JPG",
+    "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/raju.JPG",
     "children": [
         {
             "name": "Vasantha & Kishan",
-            "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/vasantha.JPG",
+            "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/vasantha.JPG",
             "children": [
-                {"name": "Laasya Sree", "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/laasya.JPG"},
-                {"name": "Jeevana", "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/jeevana.JPG"},
-                {"name": "Harsith", "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/harsith.JPG"}
+                {"name": "Laasya Sree", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/laasya.JPG"},
+                {"name": "Jeevana", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/jeevana.JPG"},
+                {"name": "Harsith", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/harsith.JPG"}
             ]
         },
         {
             "name": "Lalitha & Nandulal",
-            "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/lalli.JPG",
+            "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/lalli.JPG",
             "children": [
-                {"name": "Goutham Deekshith", "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/goutham.JPG"},
-                {"name": "Yashaswi", "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/lucky.JPG"}
+                {"name": "Goutham Deekshith", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/goutham.JPG"},
+                {"name": "Yashaswi", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/lucky.JPG"}
             ]
         },
         {
             "name": "Anitha & Madhu",
-            "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/anu.JPG",
+            "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/anu.JPG",
             "children": [
-                {"name": "Praneeth Ram Chandru", "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/praneeth.JPG"},
-                {"name": "Liya Sri Varshini", "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/liya.JPG"}
+                {"name": "Praneeth Ram Chandru", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/praneeth.JPG"},
+                {"name": "Liya Sri Varshini", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/liya.JPG"}
             ]
         },
         {
             "name": "Sunitha & Suresh",
-            "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/sunitha.JPG",
+            "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/sunitha.JPG",
         },
         {
             "name": "Sabitha & Jagan",
-            "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/sabitha.JPG",
+            "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/sabitha.JPG",
             "children": [
-                {"name": "Jaishnavi", "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/jaishnavi.JPG"}
+                {"name": "Jaishnavi", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/jaishnavi.JPG"}
             ]
         },
         {
             "name": "Nagamani",
-            "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/nagamani.JPG"
+            "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/nagamani.JPG"
         },
         {
             "name": "Bikshapathi",
-            "image": "https://raw.githubusercontent.com/Bikshu0911/family_flow/main/photos/bikshu.JPG"
+            "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/bikshu.JPG"
         }
     ]
 }
