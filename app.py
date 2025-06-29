@@ -28,57 +28,71 @@ family_tree = {
     "name": "Raju & Heroji",
     "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/raju.JPG",
     "marries": 1,
+    "contact":"9949369132",
+    "address" : "https://maps.app.goo.gl/RrRwuPvS5q11XYHR6",
     "children": [
         {
             "name": "Vasantha & Kishan",
             "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/vasantha.JPG",
             "marries": 1,
+            "contact":"8919741837 & 9704248753",
+            "address" : "https://maps.app.goo.gl/kNt8Ghzg91eK5f4S6",
             "children": [
-                {"name": "Laasya Sree", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/laasya.JPG", "marries": 0},
-                {"name": "Jeevana", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/jeevana.JPG", "marries": 0},
-                {"name": "Harsith", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/harsith.JPG", "marries": 0}
+                {"name": "Laasya Sree", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/laasya.JPG", "marries": 0,"dob":"2 May 2011"},
+                {"name": "Jeevana", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/jeevana.JPG", "marries": 0,"dob": "9 Nov "},
+                {"name": "Harsith", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/harsith.JPG", "marries": 0, "dob": "18 Mar "}
             ]
         },
         {
             "name": "Lalitha & Nandulal",
             "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/lalli.JPG",
             "marries": 1,
+            "contact":"9440797313 & 9494576088",
+            "address" : "https://maps.app.goo.gl/EJVe19F38N4RWBpv5",
             "children": [
-                {"name": "Goutham Deekshith", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/goutham.JPG", "marries": 0},
-                {"name": "Yashaswi", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/lucky.JPG", "marries": 0}
+                {"name": "Goutham Deekshith", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/goutham.JPG", "marries": 0 , "dob": "1 Aug 2015"},
+                {"name": "Yashaswi", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/lucky.JPG", "marries": 0 , "dob": "26 Sep 2017"}
             ]
         },
         {
             "name": "Anitha & Madhu",
             "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/anu.JPG",
             "marries": 1,
+            "contact":"9481802174",
+            "address" : "https://maps.app.goo.gl/tLqh5HLgZejukXwk9",
             "children": [
-                {"name": "Praneeth Ram Chandru", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/praneeth.JPG", "marries": 0},
-                {"name": "Liya Sri Varshini", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/liya.JPG", "marries": 0}
+                {"name": "Praneeth Ram Chandru", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/praneeth.JPG", "marries": 0, "dob": "7 Sep 2013"},
+                {"name": "Liya Sri Varshini", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/liya.JPG", "marries": 0, "dob": "3 Mar"}
             ]
         },
         {
             "name": "Sunitha & Suresh",
             "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/sunitha.JPG",
             "marries": 1,
+            "contact":"9515878065 & 8466946693",
         },
         {
             "name": "Sabitha & Jagan",
             "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/sabitha.JPG",
             "marries": 1,
+            "contact":"7993772615 & 7989033308",
             "children": [
-                {"name": "Jaishnavi", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/jaishnavi.JPG", "marries": 0}
+                {"name": "Jaishnavi", "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/jaishnavi.JPG", "marries": 0, "dob": "18 Feb"}
             ]
         },
         {
             "name": "Nagamani",
             "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/nagamani.JPG",
-            "marries": 0
+            "marries": 0,
+            "contact":7032854132,
+            "dob": "2 Feb 2000"
         },
         {
             "name": "Bikshapathi",
             "image": "https://raw.githubusercontent.com/Bikshu0911/familly_flow/main/photos/bikshu.JPG",
-            "marries": 0
+            "marries": 0,
+            "contact":7095332496,
+            "dob": "9 Nov 2001"
         }
     ]
 }
@@ -93,6 +107,9 @@ def build_flow(tree, parent_id=None, level=1, idx=0, y_offset=0):
     node_type = 'input' if level == 1 else ('default' if level == 2 else 'output')
     image_url = tree.get("image", "")
     marries = tree.get("marries", 0)
+    contact = tree.get("contact", None)
+    address = tree.get("address", None)
+    dob = tree.get("dob", None)
     # Set border color based on marries value
     border_color = "red" if marries == 1 else "green"
     style = {
@@ -101,13 +118,24 @@ def build_flow(tree, parent_id=None, level=1, idx=0, y_offset=0):
         "background": "#fff"
     }
     if image_url:
-        # Use Streamlit's static file serving for local images
         content = f"""<div style="text-align:center;">
 <img src="{image_url}" alt="{tree['name']}" width="80"><br>
-<b>{tree['name']}</b>
-</div>"""
+<b>{tree['name']}</b>"""
+        if contact:
+            content += f"<br><span style='font-size:12px;color:#555;'>{contact}</span>"
+        if address:
+            content += f"<br><a href='{address}' target='_blank' style='font-size:12px;color:#1a73e8;'>Address</a>"
+        if dob:
+            content += f"<br><span style='font-size:12px;color:#888;'>{dob}</span>"
+        content += "</div>"
     else:
         content = f"<b>{tree['name']}</b>"
+        if contact:
+            content += f"<br><span style='font-size:12px;color:#555;'>{contact}</span>"
+        if address:
+            content += f"<br><a href='{address}' target='_blank' style='font-size:12px;color:#1a73e8;'>Address</a>"
+        if dob:
+            content += f"<br><span style='font-size:12px;color:#888;'>{dob}</span>"
     node_kwargs = {
         "id": node_id,
         "pos": pos,
